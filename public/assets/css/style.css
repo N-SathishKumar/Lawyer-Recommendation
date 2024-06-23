@@ -1,0 +1,341 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to right, #F15A24, #F0A202);
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 100vh;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #F15A24, #F0A202);
+  z-index: 10;
+  padding: 10px 20px;
+
+}
+
+h1 {
+  color: white;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+a:hover {
+  color: #0066cc;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  position: sticky;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+label {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  background-color: #0077ff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0066cc;
+}
+
+#lawyerList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.lawyer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.lawyer:hover {
+  transform: translateY(-5px);
+}
+
+.lawyer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.lawyer h2 {
+  color: #0077ff;
+  margin-top: 10px;
+}
+
+.lawyer .category {
+  color: #ff6600;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.about-content {
+  color: black;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.about-content h2,
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 0%;
+}
+
+/* Contact section styles */
+.contact-section {
+  background-color: #bdbdbd1e;
+  padding: 40px;
+  padding-top: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+  margin-bottom: 40px;
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info li span:first-child {
+  display: inline-block;
+  width: 80px;
+  margin-right: 10px;
+}
+
+.contact-info li span:nth-child(2) {
+  color: #333;
+}
+
+.contact-info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.inputBox {
+  margin-bottom: 15px;
+  padding-right: 30px;
+  width: 48%;
+}
+
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  resize: none;
+}
+
+.inputBox textarea {
+  height: 100px;
+}
+
+.submit-button {
+  background-image: linear-gradient(to right, #4CAF50 0%, #388E3C 100%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  max-width: 200px;
+  width: 100%;
+}
+
+.submit-button:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.name-email {
+  display: flex;
+}
+
+
+@media (max-width: 800px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-bar {
+    display: none;
+    width: 98%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #F15A24, #F0A202);
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .menu-bar.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230px;
+    justify-content: center;
+  }
+
+  .menu-bar a {
+    padding-top: 20px;
+    font-size: 18px;
+    width: 100%;
+    height: 3em;
+  }
+
+  .menu-bar a:hover {
+    background-color: #d9d9a042;
+  }
+
+  .name-email {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .inputBox {
+    margin-bottom: 15px;
+    padding-right: 30px;
+    width: 94%;
+  }
+
+  .title {
+    margin-top: 2px;
+    font-size: 30px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+    margin-top: 6px;
+  }
+}
